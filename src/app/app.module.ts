@@ -39,6 +39,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { FngAccordionComponent } from './fng-accordion/fng-accordion.component';
 import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
 import { PortfolioLightboxComponent } from './portfolio-lightbox/portfolio-lightbox.component';
+import { CarPortfolioComponent } from './car-portfolio/car-portfolio.component';
 
 @NgModule({
   imports: [
@@ -55,7 +56,10 @@ import { PortfolioLightboxComponent } from './portfolio-lightbox/portfolio-light
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
-      { path: 'graphic', component: GraphicDesignComponent },
+      { path: 'graphic', component: GraphicDesignComponent }
+      ,
+      { path: 'car', component: Car-portfolio.component },
+
     ])
   ],
   declarations: [
@@ -68,7 +72,8 @@ import { PortfolioLightboxComponent } from './portfolio-lightbox/portfolio-light
     ShippingComponent,
     FngAccordionComponent,
     GraphicDesignComponent,
-    PortfolioLightboxComponent
+    PortfolioLightboxComponent,
+    CarPortfolioComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
